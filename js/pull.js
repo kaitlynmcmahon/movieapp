@@ -7,6 +7,8 @@
 
     // remove any already-existing results from results-area
     $('.results-area h3').remove();
+    $('.results-area img').remove();
+    $('.results-area p').remove();
 
 
     // if the search button was clicked, store the text from the search box
@@ -43,7 +45,7 @@ function runSearch(userText){
       // now add the image
       theAppend = theAppend + '  <div class="image"><img src="'+ movie.Poster +'" class="movie-logo"></div>';
       // now add the IMDB link
-      theAppend = theAppend + '  <p class=""><a href="http://www.imdb.com/title/'+ movie.imdbDB + '">Get more information on IMDB</a></p>';
+      theAppend = theAppend + '  <p class="imdb"><a href="http://www.imdb.com/title/'+ movie.imdbDB + '">Get more information on IMDB</a></p>';
       // and close the .movie-result div
       theAppend = theAppend + '</div>';
 
