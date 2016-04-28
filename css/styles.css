@@ -1,37 +1,74 @@
-html {
-  
+html, * {
+  box-sizing: border-box;
 }
 body {
-  background-color: #dbd1b4;
+  background-color: #AA7BC3;
 }
 header {
   text-align: center;
   font-size: 2em;
+  border-bottom: 1px solid;
 }
 .my-container {
+  padding-top: 1em;
   width: 90%;
   margin: 0 auto;
 }
 h1{
-     font-family: 'Fjalla One', sans-serif;
+  font-family: 'Fjalla One', sans-serif;
+  color: white;
+}
+h2 {
+  color: white;
 }
 .search-button {
-  background-color: #71EEB8;
+  background-color: #531CB3;
+  color: white;
 }
 .search-box {
-  width: 500px;
+  width: 75%;
 }
 a {
-  color: gray;
+  color: #531CB3;
   text-decoration: none;
 }
 a:hover {
   text-decoration: underline;
 }
 a:after {
-  color: gray;
+  color: #531CB3;
 }
 .pure-u-1-3 {
-  background-color: #71EEB8;
-  padding: inherit 1em;
+  display: none;
+  color: white;
+}
+.movie-logo {
+  border: 5px solid #531CB3;
+}
+
+
+@media screen and (min-width: 760px) {
+  .my-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pure-u-1-3 {
+    display: block;
+    background-color: #531CB3;
+    padding: .5em;
+    height: 200px;
+  }
+}
+
+@media (max-width: 700px) {
+  .pure-u-2-3 {
+    width: 100%;
+  }
 }
